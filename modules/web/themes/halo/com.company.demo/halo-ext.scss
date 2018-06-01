@@ -1,0 +1,13 @@
+/* Define your theme modifications inside next mixin */
+@mixin com_company_demo-halo-ext {
+  .demo-widget {
+    height: 150px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: $v-border-radius;
+
+    text-indent: 10px;
+    padding-top: 5px;
+    font-size: 40px;
+  }
+}
