@@ -10,4 +10,27 @@
     padding-top: 5px;
     font-size: 40px;
   }
+
+  // Dashboard styles
+
+  .big-number {
+    font-size: 50px;
+  }
+  .rl-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .demo-rl-scroll {
+    overflow-y: auto;
+  }
+
+  .map-row {
+    height: calc(100% - 170px);
+  }
+
+  .map-col > * {
+    height: 100%;
+    padding-top: 10px;
+  }
 }

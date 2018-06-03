@@ -1,5 +1,6 @@
 package com.company.demo.web.screens;
 
+import com.haulmont.cuba.gui.WindowManager.OpenType;
 import com.haulmont.cuba.gui.components.AbstractMainWindow;
 import com.haulmont.cuba.gui.components.Embedded;
 import com.haulmont.cuba.gui.components.mainwindow.FtsField;
@@ -21,5 +22,12 @@ public class ExtAppMainWindow extends AbstractMainWindow {
         initLayoutAnalyzerContextMenu(logoImage);
         initLogoImage(logoImage);
         initFtsField(ftsField);
+    }
+
+    @Override
+    public void ready() {
+        super.ready();
+
+        openWindow("dashboard", OpenType.NEW_TAB);
     }
 }
