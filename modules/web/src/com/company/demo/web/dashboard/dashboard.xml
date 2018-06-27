@@ -7,9 +7,13 @@
     <layout>
         <swr:responsiveLayout width="100%"
                               height="100%"
-                              stylename="demo-rl-scroll">
+                              spacing="true"
+                              scrollable="true"
+                              flexible="true">
+
             <swr:row horizontalSpacing="true"
-                     horizontalSpacingSize="SMALL">
+                     horizontalSpacingSize="SMALL"
+                     margin="false">
                 <swr:column>
                     <swr:content>
                         <groupBox caption="Population"
@@ -63,8 +67,11 @@
                     <swr:display xs="12" sm="6" md="6" lg="3"/>
                 </swr:column>
             </swr:row>
-            <swr:row stylename="map-row">
-                <swr:column height="100%" stylename="map-col">
+            <swr:row stylename="map-row"
+                     margin="false"
+                     minHeight="50vh"
+                     grow="true">
+                <swr:column height="100%">
                     <swr:content>
                         <browserFrame width="100%"
                                       height="100%">

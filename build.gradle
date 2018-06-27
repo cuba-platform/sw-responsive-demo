@@ -1,8 +1,7 @@
 
 buildscript {
-    ext.cubaVersion = '6.8.8'
+    ext.cubaVersion = '6.9.1'
     repositories {
-        
         mavenLocal()
         maven {
             url 'https://repo.cuba-platform.com/content/groups/work'
@@ -47,7 +46,7 @@ cuba {
 
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
-    appComponent("org.strangeway.responsive:sw-responsive-global:0.1-SNAPSHOT")
+    appComponent("org.strangeway.responsive:sw-responsive-global:1.1.1")
 
 }
 
