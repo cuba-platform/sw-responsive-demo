@@ -46,7 +46,7 @@ cuba {
 
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
-    appComponent("org.strangeway.responsive:sw-responsive-global:1.1.1")
+    appComponent("org.strangeway.responsive:sw-responsive-global:1.1.2")
 
 }
 
