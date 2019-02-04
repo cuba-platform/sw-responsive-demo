@@ -2,8 +2,7 @@
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="mainMsg://application.caption"
         class="com.company.demo.web.screens.ExtAppMainWindow"
-        xmlns:swr="http://strangeway.org/xsd/responsive/sw-responsive.xsd"
-        xmlns:main="http://schemas.haulmont.com/cuba/mainwindow.xsd">
+        xmlns:swr="http://strangeway.org/xsd/responsive/sw-responsive.xsd">
     <layout responsive="true"
             stylename="c-sidemenu-responsive">
         <hbox id="horizontalWrap"
@@ -20,10 +19,10 @@
                         stylename="primary c-sidemenu-toggle"/>
                 <hbox id="mobileButtonsBox"
                       stylename="c-sidemenu-mobile-buttons">
-                    <main:newWindowButton id="mobileNewWindowButton"
+                    <newWindowButton id="mobileNewWindowButton"
                                           description="mainMsg://newWindowBtnDescription"
                                           icon="app/images/new-window.png"/>
-                    <main:logoutButton id="mobileLogoutButton"
+                    <logoutButton id="mobileLogoutButton"
                                        description="mainMsg://logoutBtnDescription"
                                        icon="app/images/exit.png"/>
                 </hbox>
@@ -36,33 +35,32 @@
                 </hbox>
                 <cssLayout id="sideMenuWrap"
                            stylename="c-sidemenu-wrap">
-                    <embedded id="logoImage"
-                              align="MIDDLE_CENTER"
-                              stylename="c-app-icon"
-                              type="IMAGE"/>
-                    <main:userIndicator id="userIndicator"
+                    <image id="logoImage"
+                           align="MIDDLE_CENTER"
+                           stylename="c-app-icon"/>
+                    <userIndicator id="userIndicator"
                                         width="100%"/>
                     <hbox id="mainButtonsBox"
                           stylename="c-main-buttons">
-                        <main:newWindowButton id="newWindowButton"
+                        <newWindowButton id="newWindowButton"
                                               description="mainMsg://newWindowBtnDescription"
                                               icon="app/images/new-window.png"/>
-                        <main:logoutButton id="logoutButton"
+                        <logoutButton id="logoutButton"
                                            description="mainMsg://logoutBtnDescription"
                                            icon="app/images/exit.png"/>
                     </hbox>
-                    <main:timeZoneIndicator id="timeZoneIndicator"
+                    <timeZoneIndicator id="timeZoneIndicator"
                                             width="100%"/>
-                    <main:sideMenu id="sideMenu"
+                    <sideMenu id="sideMenu"
                                    sidePanel="sideMenuPanel"
                                    sidePanelToggleButton="mobileMenuButton"/>
-                    <main:ftsField id="ftsField"
+                    <ftsField id="ftsField"
                                    width="100%"/>
                 </cssLayout>
             </cssLayout>
-            <main:workArea id="workArea"
+            <workArea id="workArea"
                            height="100%">
-                <main:initialLayout margin="true"
+                <initialLayout margin="true"
                                     spacing="true">
 
                     <swr:responsiveLayout>
@@ -102,9 +100,8 @@
                             </swr:column>
                         </swr:row>
                     </swr:responsiveLayout>
-
-                </main:initialLayout>
-            </main:workArea>
+                </initialLayout>
+            </workArea>
         </hbox>
     </layout>
 </window>
