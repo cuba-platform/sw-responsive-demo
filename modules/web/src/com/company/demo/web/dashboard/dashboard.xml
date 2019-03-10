@@ -4,7 +4,7 @@
         xmlns:swr="http://strangeway.org/xsd/responsive/sw-responsive.xsd"
         class="com.company.demo.web.dashboard.Dashboard"
         messagesPack="com.company.demo.web.screens">
-    <layout>
+    <layout height="100%" minHeight="AUTO">
         <swr:responsiveLayout width="100%"
                               height="100%"
                               spacing="true"
@@ -12,6 +12,7 @@
                               flexible="true">
 
             <swr:row horizontalSpacing="true"
+                     shrink="true"
                      horizontalSpacingSize="SMALL"
                      margin="false">
                 <swr:column>
@@ -71,7 +72,7 @@
                      margin="false"
                      minHeight="50vh"
                      grow="true">
-                <swr:column height="100%">
+                <swr:column height="100%" width="100%">
                     <swr:content>
                         <browserFrame width="100%"
                                       height="100%">

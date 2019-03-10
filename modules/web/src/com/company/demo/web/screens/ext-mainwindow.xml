@@ -60,7 +60,7 @@
                 </cssLayout>
             </cssLayout>
             <workArea id="workArea"
-                           height="100%">
+                      height="100%">
                 <initialLayout margin="true"
                                     spacing="true">
 
