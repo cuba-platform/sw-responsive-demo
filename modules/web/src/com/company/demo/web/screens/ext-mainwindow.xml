@@ -37,6 +37,7 @@
                            stylename="c-sidemenu-wrap">
                     <image id="logoImage"
                            align="MIDDLE_CENTER"
+                           scaleMode="CONTAIN"
                            stylename="c-app-icon"/>
                     <userIndicator id="userIndicator"
                                         width="100%"/>
